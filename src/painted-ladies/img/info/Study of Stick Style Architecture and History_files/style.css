@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+/**
+ * Theme Name: 	Tempest
+ * Version: 	1.0.1
+ * Author: 		Matt Tuttle
+ * Author URI:  https://www.aimmedia.com
+ * Description:	The AIM theme that replicates the Tempest styling for all the sites that are imported back to WordPress from Tempest.
+ */
+
+h1 {
+	font-family: effra, sans-serif;
+}
+
+.sticky-scroll {
+	position: sticky;
+	top: -1px;
+	padding-top: 1px;
+	z-index: 999;
+	background: #fff;
+	transform: translateY(0);
+	transition: transform 0.3s ease-in-out;
+}
+
+.sticky-scroll .sticky-show {
+	display: none;
+}
+@media (max-width: 767.98px) {
+
+	.sticky-scroll .sticky-show {
+		display: block;
+	}
+}
+
+.sticky-scroll.stuck .sticky-show {
+	display: block;
+}
+
+.sticky-scroll.stuck.scroll-hide {
+	transform: translateY(-100%);
+}
+
+.footer-hero img {
+	width: 100%;
+}
+
+.font-sans-serif {
+	font-family: effra, sans-serif;
+}
+
+.font-serif {
+	font-family: clarendon-text-pro, serif;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.category-links {
+	list-style: none;
+	padding: 0;
+	max-width: 800px;
+	line-height: 1.8em;
+}
+
+.category-links li {
+	display: inline-block;
+}
+
+.category-links li:not(:last-child):after {
+	content: "|";
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.btn-sticky {
+	position: absolute;
+	left: 0;
+	top: 90px;
+	width: 90px;
+	background: #777;
+	color: #fff !important;
+	text-transform: uppercase;
+	font-family: effra, sans-serif;
+	font-size: 14px;
+	transform: rotate(-90deg);
+	transform-origin: 0 0;
+	border-radius: 0;
+}
+
+.sidebar .sticky-scroll {
+	transition: top 0.3s ease-out;
+	top: 105px;
+	margin-top: 600px;
+}
+
+.sidebar .sticky-scroll.scroll-hide {
+	top: 15px;
+}
+
+.ad-rail {
+	margin-bottom: 15px;
+}
+
+.entry-meta dt {
+	display: none;
+}
+
+.entry-meta dd {
+	display: inline-block;
+}
+
+.entry-meta dd:not(:first-of-type)::before {
+	content: "\a·\a";
+	margin-right: 4px;
+	margin-left: 4px;
+}
+
+.post-thumb {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;
+}
+
+.post-thumb img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.post-category {
+	text-transform: uppercase;
+	color: #333;
+	font-family: effra, sans-serif;
+	font-size: 0.9em;
+	font-weight: 700;
+}
+
+.grid-title {
+	line-height: 1.1em;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+.grid-title a {
+	color: #531117;
+}
+
+.wp-caption {
+	max-width: 100%;
+	height: auto;
+}
+
+.entry-desc {
+	font-size: 1.2em;
+	margin: 15px 0;
+}
+
+.entry-meta {
+	font-size: 1.2em;
+}
+
+figure img {
+	max-width: 100%;
+}
+
+figcaption {
+	font-size: 0.9em;
+	font-style: italic;
+	margin: 5px 0 20px;
+}
+
+figcaption p {
+	margin-bottom: 5px;
+}
+figcaption p.attribution {
+	font-size: .8em;
+}
+
+.section-title {
+	border-bottom: 1px solid #975e64;
+	line-height: 0.7em;
+	font-size: 2.4em;
+}
+
+.section-latest {
+	margin-bottom: 100px;
+}
+
+.brand-engagement {
+	background: #3d4e39;
+	padding: 20px;
+}
+.brand-engagement .site-logo {
+	text-align:center;
+}
+.brand-engagement .site-logo img.custom-logo {
+	max-width: min(500px, 100%);
+}
+.brand-engagement > .container > .row.my-4 {
+	text-align: center;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: center;
+	margin-bottom: 0px !important;
+}
+
+.btn-engagement {
+	color: #fff;
+	background-color: #363;
+	border-color: #fff;
+	text-transform: uppercase;
+	font-family: effra, sans-serif;
+	font-size: 0.9em;
+	margin-right: 5px;
+	padding: 15px 30px;
+}
+
+.btn-engagement:hover {
+	color: #fff;
+	background-color: #5a5;
+	border-color: #e6e6e6;
+}
+
+.btn-engagement:focus,
+.btn-engagement.focus {
+	color: #fff;
+	background-color: #5a5;
+	border-color: #e6e6e6;
+	box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+.btn-engagement.disabled,
+.btn-engagement:disabled {
+	color: #fff;
+	background-color: #363;
+	border-color: #fff;
+}
+
+.btn-engagement:not(:disabled):not(.disabled):active,
+.btn-engagement:not(:disabled):not(.disabled).active,
+.show > .btn-engagement.dropdown-toggle {
+	color: #fff;
+	background-color: #242;
+	border-color: #dfdfdf;
+}
+
+.btn-engagement:not(:disabled):not(.disabled):active:focus,
+.btn-engagement:not(:disabled):not(.disabled).active:focus,
+.show > .btn-engagement.dropdown-toggle:focus {
+	box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+.wp-block-image img {
+	height: auto;
+}
+
+/* pagination */
+	nav.pagination {
+		margin: 10px auto;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		font-family: effra, sans-serif;
+		font-size: 20px;
+	}
+	nav.pagination > a {
+		margin: 0px 10px;
+	}
+	nav.pagination > a.current {
+		color: black;
+		cursor: default;
+		pointer-events: none;
+	}
+/* end pagination */
+
+.wp-block-pullquote p {
+	font-size: 1.1em !important;
+	text-align: left;
+}

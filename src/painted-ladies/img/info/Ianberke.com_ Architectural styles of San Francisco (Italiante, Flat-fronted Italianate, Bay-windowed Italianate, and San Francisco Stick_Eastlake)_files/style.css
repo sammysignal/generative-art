@@ -1,0 +1,94 @@
+/* Cascading Style Sheets */ 
+/* (c) www.ianberke.com 2003 */ 
+
+body {background-color: #ffffff ; /* Sets the background. */ }
+
+/* Controls the headers. */
+H1 {color: #BD4340; font-family: "verdana", "arial", "helvetica";} 
+H1.film {color: #666666; font-size: 22px; font-family: "verdana", "arial", "helvetica";} 
+H2 {color: #BD4340; font-family: "verdana", "arial", "helvetica";} 
+H2.film {color: #BD4340; font-size: 16px; font-family: "verdana", "arial", "helvetica";} 
+H3 {color: #BD4340; font-style: italic ; font-family: "verdana", "arial", "helvetica";} 
+H4 {color: black; font-size: 80%; font-style: italic ; font-family: "verdana", "arial", "helvetica";} 
+H5 {color: #BD4340; font-size: 90%; font-style: italic ; font-weight: bold; font-family: "verdana", "arial", "helvetica"; } 
+H6 {color: #BD4340; font-size: 70%; font-style: italic ; font-family: "verdana", "arial", "helvetica"; } 
+
+/* Controls the links. Removes underline and colors them. */
+a:link {text-decoration: none; color: BD4340; font-weight: bold; }
+a:visited {text-decoration: none; color: 666699; font-weight: bold; }
+a:active {text-decoration: none }
+a:hover {color: #BD4360;}
+
+/* Controls body text. */
+p { /* Controls body text */
+	color: #444444;
+	font-size: 75%;
+	font-family: "verdana", "arial", "helvetica";
+} 
+
+p.note { 	/* Controls notes and bylines */
+	font-size: 75%;
+	font-style: italic; 
+   } 
+
+li { 			/* for lists */
+	font-size: 75%;
+	font-family: "verdana", "arial", "helvetica";
+   } 
+
+/* Controls NavBar, NavFoot, */ 
+span.navbar {   /* Controls Navigation Bar navbar */
+	font-size: 75%;
+	font-weight: bold; 
+	font-family: "verdana", "arial", "helvetica"; 
+	text-align: left; 
+   } 
+
+div.navtop {   /* Controls navbar at top of pages*/
+	font-size: 85%;
+	font-weight: bold; 
+	font-family: "verdana", "arial", "helvetica"; 
+	text-align: center; 
+   } 
+
+span.aboutsf {   /* Controls navbar for info about SF */
+	font-size: 70%;
+	font-family: "verdana", "arial", "helvetica"; 
+   } 
+span.houseview {   /* Controls info about houses */
+	font-size: 70%;
+	font-weight: bold; 
+	font-family: "verdana", "arial", "helvetica"; 
+   } 
+span.housebrief {   /* Controls short info about houses */
+	font-size: 70%;
+	font-family: "verdana", "arial", "helvetica"; 
+   } 
+span.housesold {   /* Controls SOLD notice*/
+	font-size: 90%;
+	color: red;
+	font-weight: bold; 
+	font-family: "verdana", "arial", "helvetica"; 
+   } 
+span.calendar {   /* Controls the date in the sidebar */
+	font-size: 70%;
+	font-family: "verdana", "arial", "helvetica"; 
+   } 
+span.housemaps {   /* Controls info about maps */
+	font-size: 70%;
+	font-weight: bold; 
+	font-family: "verdana", "arial", "helvetica"; 
+   } 
+
+span.navfoot { 	/* Controls Navigation footer */
+	font-size: 80%;
+	text-align: right; 
+	font-family: "verdana", "arial", "helvetica"; 
+	line-height: 150%; 
+   } 
+
+span.pageup {  /* Controls the pageup icon */
+     text-align: right; 
+   }
+
+/* End of file: Cascading Style Sheets */ 

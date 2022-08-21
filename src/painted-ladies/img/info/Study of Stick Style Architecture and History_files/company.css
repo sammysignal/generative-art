@@ -1,0 +1,21 @@
+#company-logo-and-details {
+	display: block;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+#company-logo-and-details > * {
+	display: block;
+	vertical-align: top;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+img#company-logo {
+	margin: 20px auto;
+	max-width: 100%;
+}
+address#company-details {
+	
+}
