@@ -26,6 +26,33 @@ class Point {
   }
 }
 
+/**
+ * Accepts n points as arguments and uses them to call any p5js function which accepts x, y pairs.
+ * Therefore:
+ *   line(p1.x, p1y, p2.x, p2.y)
+ *     is the same as:
+ *   withP(line, p1, p2)
+ * @param {*} f - p5js function to call,
+ * @param  {...any} args
+ */
+function withP(f, ...args) {
+  function fCopy(...argsOfF) {
+    return f(...argsOfF);
+  }
+
+  let l = args.length;
+
+  assert(l % 2 === 0);
+  let finalFunc = fCopy;
+  for (i = 0; i < l; i++) {
+    let point = args[i];
+    finalFunc = finalFunc.bind(this, point.x, point.y);//.bind(point.y)
+  }
+
+  finalFunc.call();
+}
+
+
 /** CARTESIAN COORDINATES **/
 
 /**
