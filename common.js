@@ -26,6 +26,15 @@ class Point {
   }
 }
 
+class Rectangle {
+  constructor(x, y, width, height) {
+    this.x = x;
+    this.y = y;
+    this.width = width;
+    this.height = height;
+  }
+}
+
 /**
  * Accepts n points as arguments and uses them to call any p5js function which accepts x, y pairs.
  * Therefore:
@@ -42,7 +51,6 @@ function withP(f, ...args) {
 
   let l = args.length;
 
-  assert(l % 2 === 0);
   let finalFunc = fCopy;
   for (i = 0; i < l; i++) {
     let point = args[i];
@@ -79,4 +87,9 @@ function pointC(point) {
 // Draw a line between two cartesian coordinates
 function lineC(point1, point2) {
   line(...toPFiveCords([point1.x, point1.y]), ...toPFiveCords([point2.x, point2.y]));
+}
+
+// Draw a line between two point locations
+function lineP(point1, point2) {
+  line(point1.x, point1.y, point2.x, point2.y);
 }
